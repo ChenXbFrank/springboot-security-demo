@@ -1,0 +1,23 @@
+spring:
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/springsecurity?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+
+  jpa:
+    show-sql: true
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+
+  thymeleaf:
+    suffix: .html
+    cache: false
+    mode: LEGACYHTML5
+
+
+server:
+  port: 8081
